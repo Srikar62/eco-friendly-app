@@ -122,6 +122,7 @@ const FeaturedProducts = ({ addToCart, searchQuery }) => {
           </div>
         ))}
       </div>
+      <button className="button_all"><Link to="/all-products">View All Products</Link></button>
     </section>
   );
 };

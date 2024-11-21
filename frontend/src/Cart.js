@@ -67,7 +67,7 @@ const Cart = () => {
           ))}
         </ul>
       )}
-      <button><Link to="/checkout">Checkout</Link></button>
+      <button className="button_all"><Link to="/checkout">Checkout</Link></button>
     </div>
   );
 };
