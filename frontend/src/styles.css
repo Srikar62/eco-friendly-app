@@ -1,0 +1,423 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 8px 12px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar span {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+    
+
+main{
+    background-color: #2ecc71;
+}
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.h2{
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black; 
+    padding: 20px;          
+    border-radius: 8px;     
+    background-color: #f9f9f9; 
+    margin: 10px auto;      
+    max-width: 500px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+   
+   
+}
+.filters {
+    width: 10%;
+    height:300px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    border:1px solid black;
+}
+.filters h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #2e8b57;
+}
+.filters div {
+    margin-bottom: 15px;
+}
+.filters label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.filters select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.filters button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #216a45;
+}
+.featured-products  {
+    padding: 2em;
+    text-align: center;
+    background-color:#2ecc71;
+}
+.featured-products h2{
+    border: 2px solid black; 
+    padding: 20px;         
+    border-radius: 8px;     
+    background-color: #f9f9f9; 
+    margin: 20px auto;      /* Center it and add top/bottom margin */
+    max-width: 500px;      /* Optional max-width for layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background-color:gre;
+    padding: 1em;
+    color:black;
+    text-align: center;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Styles for the dropdown menu */
+.header-buttons {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 10;
+    width: 150px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown menu on hover */
+.header-buttons:hover .dropdown-menu {
+    display: block;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #0073e6; /* Choose a hover color */
+}
+.product-item{
+    width:50%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #32cd32; /* Matching green background */
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 70%;
+    background-color: #f8f9fa;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+.product-item img {
+    width: 200px; 
+    height: 267px; 
+    border-radius: 4px; 
+    margin-bottom: 10px;  
+}
+
+.product-item h3 {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.produproduct-item p {
+    font-size: 1em;
+    color: black;
+}
+
+.product-item button {
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    background-color:blueviolet;
+    color: yellow;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color:blue;
+}
+
+/* View All Products Button */
+.view-all-products {
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    background-color:blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-all-products:hover {
+    background-color:blueviolet ;
+}
+
+
+
+
+  /* General styling for the product grid */
+.product-grid {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    gap: 16px; /* Space between items, adjust as needed */
+    margin: 0 auto; /* Center the grid if it’s within a container */
+    padding: 16px; /* Add some padding around the grid */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1800px;
+}
+
+#login-btn {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    flex: 1;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.thumbnails img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.product-info {
+    flex: 2;
+}
+
+.price {
+    color: green;
+    font-size: 1.2em;
+}
+
+.quantity-section {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: blue;
+    text-decoration: none;
+}
